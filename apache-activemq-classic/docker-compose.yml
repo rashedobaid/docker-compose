@@ -1,5 +1,5 @@
 services:
-  activemq:
+  activemq-classic:
     image: apache/activemq-classic:latest
     container_name: activemq-classic
     ports:

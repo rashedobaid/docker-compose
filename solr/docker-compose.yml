@@ -1,0 +1,11 @@
+services:
+  solr:
+    image: solr
+    container_name: solr
+    ports:
+      - "8983:8983"
+    volumes:
+      - ./:/var/solr
+    command:
+      - solr-precreate
+      - gettingstarted
