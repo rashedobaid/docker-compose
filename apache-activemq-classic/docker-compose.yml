@@ -1,0 +1,11 @@
+services:
+  activemq:
+    image: apache/activemq-classic:latest
+    container_name: activemq-classic
+    ports:
+      - "8161:8161"
+      - "61616:61616"
+    environment:
+      - ACTIVEMQ_NAME=activemq
+      - ACTIVEMQ_USERNAME=admin
+      - ACTIVEMQ_PASSWORD=password
