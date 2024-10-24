@@ -1,6 +1,3 @@
 *~
 .Trash-1000
 .DS_Store
-*/*
-!*/*/docker-compose.yml
-!*/.env.example
