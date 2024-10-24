@@ -1,0 +1,17 @@
+services:
+  activemq-classic:
+    image: symptoma/activemq:latest
+    container_name: activemq-classic
+    ports:
+      - "8161:8161" # Web Console
+      - "61616:61616" # OpenWire
+      - "5672:5672" # AMQP
+      - "61613:61613" # STOMP
+      - "1883:1883" # MQTT
+      - "61614:61614" # WS
+    environment:
+      - ACTIVEMQ_NAME=activemq
+      - ACTIVEMQ_USERNAME=admin
+      - ACTIVEMQ_PASSWORD=password
+      - ACTIVEMQ_WEBADMIN_USERNAME=admin
+      - ACTIVEMQ_WEBADMIN_PASSWORD=password
