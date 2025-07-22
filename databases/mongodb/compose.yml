@@ -1,12 +1,12 @@
 services:
   mongo:
-      container_name: mongodb
-      image: mongo:latest
-      ports:
-          - 27017:27017
-      volumes:
-          - ./mongodb_data:/data/db
-          - ./mongodb_backup:/backup
-      environment:
-          - MONGO_INITDB_ROOT_USERNAME=root
-          - MONGO_INITDB_ROOT_PASSWORD=example
+    container_name: mongodb
+    image: mongo:latest
+    ports:
+        - 27017:27017
+    volumes:
+        - ./mongodb_data:/data/db
+        - ./mongodb_backup:/backup
+    environment:
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=example
